@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title>{dede:field.title/}</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/bootstrap.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/article.css">
+	<meta name="keywords" content="{dede:field.keywords/}" />
+	<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+	<meta http-equiv="mobile-agent" content="format=xhtml;url={dede:global.cfg_mobileurl/}/view.php?aid={dede:field.id/}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="all">
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">@潇洒哥。</a>
+        </div>
+
+        <div class="navbar-collapse collapse in" id="bs-example-navbar-collapse-1" aria-expanded="true">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href='{dede:global.cfg_cmsurl/}/' title="首页">首页</a>
+                </li>
+				{dede:channel type='top' row='4' col='1' currentstyle="<li class='hover'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>"}
+                <li>
+                    <a href='[field:typeurl/]' [field:rel/]>[field:typename/]</a>
+                </li>
+				{/dede:channel}
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="onepage">
+    <div class="container">
+        <h1>可能我是在记录生活</h1>
+        <p>也有可能</p>
+        <p>我只是随便写写而已......</p>
+    </div>
+</div>
+<div class="twopage">
+    <div class="container">
+        <div class="left col-lg-4">
+            <ul class="list-group">
+                <li class="list-group-item active">
+                    <strong style="font-size: 20px">{dede:field name='typename'/}</strong>
+                </li>
+				
+				{dede:channel type='son' row='20'}
+			         <a href="[field:typeurl/]"><li class="list-group-item" style="font-size: 20px">[field:typename/]</li></a><!--获取当前栏目名（正在子栏目中）-->
+		        {/dede:channel}
+
+            </ul>
+        </div>
+        <div class="right col-lg-8">
+            <div class="panel panel-default">
+                                           <div class="panel-heading">
+					
+					<!--改typeid---------------------------------------------------------------------------->
+					
+					
+					{dede:arclist row='1' titlelen='84' orderby='pubdate' typeid='6' idlist='' channelid='1'}
+					<strong style="font-size: 28px"> [field:title/]</strong></br>
+					<span>[field:pubdate function=MyDate('m-d',@me)/]</span>
+                    {/dede:arclist}
+                </div>
+                <div class="panel-body">
+				{dede:arclist row='1' typeid='6' orderby='pubdate' addfields='body' channelid='1'}
+					<div class="articlecontent">
+					[field:body/]
+					</div>
+				{/dede:arclist}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<footer class="modal-header">
+    <div class="container">
+        <h5 class="copyright">Copyright © 2016.<a href="/" class="text"><strong>Xiao Sa Ge </strong></a>All rights reserved.</h5>
+        <h5><strong>鄂ICP备16003154号</strong></h5>
+    </div>
+</footer>
+<script src="../js/jquery-2.1.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>{dede:global.cfg_webname/}</title>
+	<meta name="description" content="{dede:global.cfg_description/}" />
+	<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+	<meta http-equiv="mobile-agent" content="format=xhtml;url={dede:global.cfg_mobileurl/}/index.php">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/bootstrap.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="all">
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">@潇洒哥。</a>
+        </div>
+
+        <div class="navbar-collapse collapse in" id="bs-example-navbar-collapse-1" aria-expanded="true">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href='{dede:global.cfg_cmsurl/}/' title="首页">首页</a>
+                </li>
+				{dede:channel type='top' row='4' col='1' currentstyle="<li class='hover'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>"}
+                <li>
+                    <a href='[field:typeurl/]' [field:rel/]>[field:typename/]</a>
+                </li>
+				{/dede:channel}
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="onepage">
+    <div class="container">
+        <h1>潇洒哥'S WORLD</h1>
+    </div>
+</div>
+<div class="twopage">
+    <div class="container">
+        <div class="left col-lg-4">
+            <div class="bg">
+                <img src="{dede:global.cfg_templets_skin/}/images/wang.jpg" alt="wanghua">
+            </div>
+            <div class="list-group">
+			    <a href='{dede:global.cfg_cmsurl/}/'><button type="button" class="list-group-item">首页</button></a>
+				{dede:channel type='top' row='4' col='1' currentstyle="<li class='hover'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>"}
+					<a href='[field:typeurl/]' [field:rel/]><button type="button" class="list-group-item">[field:typename/]</button></a>
+				{/dede:channel}
+            </div>
+        </div>
+        <div class="right col-lg-8">
+            <div class="a">
+                <div class="name">
+                    <h1>王&nbsp;&nbsp;华</h1>
+                </div>
+                <div class="introduction">
+                    <div class="brief">
+                        <h4><a href="http://jsjxy.cug.edu.cn/11jk/Index.htm">中国地质大学（武汉）计算机学院网络工程系</a>，大三</h4>
+                    </div>
+                    <p>
+                        王华是中国地质大学（武汉）计算机学院网络工程系2013级学生，中共党员。曾担任班长、计算机学院团学联组织部部长等职务。
+                        参加过美国大学生数学建模大赛、全国高校物联网创新应用大赛等比赛。爱好篮球、摄影。
+                    </p>
+
+                    <div class="attention">
+                        <p>邮箱：whua418@gmail.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;whua_3@yahoo.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="b">
+                <h3>潇洒哥de小故事</h3>
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在高考完后，我爹问我要报什么专业的时候，我给过他这样的回答，第一
+                    我肯定不学医，第二就是计算机。分数出来之后，报了帝大，专业填了各种地质，各种勘探，各种工程。
+                </p>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;记得那天我还在广州潇洒，无意间发现被录取了，专业……网络工程。
+                    赶紧打开电脑一查，我发现原来帝大也是有计算机学院的啊，算是老夫孤陋寡闻了……心中简直是有一万匹那啥儿马在奔腾。立马拿出
+                    了手机，给帝大教务处打了电话。“您好，我是…….能不能把我退了，那个专业我不喜欢。”“退了你就滑榜了。”然后带着千般不愿
+                    ，2013年9月我走进了帝大计算机学院。
+                </p>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可能我猜到了故事的开头。参加了许多活动，混得还算可以，专业课完全
+                    听不懂，一写代码就报错，错了也看不懂是什么错，所以也不必去改了。幸运的是我还是有那么一点点小勤奋，加上寡人的大智慧，考试
+                    成绩还算过得去，勉勉强强不必太为绩点担忧。
+                </p>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;但是我真没太猜到结尾。随着学习敲代码的日子久了，而且各种大环境下的
+                    压力，我只能耐住性子，完全是从零开始去学习写代码，走了很多弯路，熬过不少夜，犯过许多愁。后来也算是慢慢找到感觉了，起码在一
+                    点点进步吧。现在想起，我也算是一只程序猿了吧……以前那些迷惘的日子，现在也在逐渐清晰起来。
+                </p>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;至于到了现在，我希望多花一些时间去写代码，去学习，去记录我所学懂的
+                    东西，将自己的收获写出来，同时也是将自己的生活写下来，让自己静心，去沉淀，去积累。
+                </p>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我想做一只更好的程序猿^-^
+                </p>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Helloooooooo XSG
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<footer class="modal-header">
+    <div class="container">
+        <h5 class="copyright">Copyright © 2016.<a href="/" class="text"><strong>Xiao Sa Ge </strong></a>All rights reserved.</h5>
+        <h5><strong>鄂ICP备16003154号</strong></h5>
+    </div>
+</footer>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-2.1.1.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/bootstrap.min.js"></script>
+</html>

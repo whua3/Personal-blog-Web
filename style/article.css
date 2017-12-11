@@ -1,0 +1,89 @@
+@font-face {
+    font-family:JosefinSlab ;
+    src: url(../fonts/JosefinSlab-Regular.ttf);
+}
+
+@font-face {
+    font-family:OpenSans;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+.twopage a{
+    text-decoration: none;
+}
+
+.all{
+    background: url("../images/9.jpg") 0px 0px;
+    background-size: cover;
+}
+
+.all{
+    position: relative;
+    width: 100%;
+}
+
+body h1{
+    font-family: JosefinSlab, Helvetica;
+    font-size: 3.0em;
+}
+
+body h2{
+    font-family: JosefinSlab, Helvetica;
+    font-size: 1.8em;
+}
+
+body p{
+    font-size: 1.1em;
+    color: #000000;
+    line-height: 1.8em;
+    margin: 0.5em 0px 1em;
+    font-family: OpenSans, Helvetica;
+    padding-right: 30px;
+    text-align: justify;
+}
+
+.all nav li{
+    font-size: 1.1em;
+}
+
+.onepage .container{
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+
+.twopage .col-lg-4 .list-group-item{
+	font-size=2em;
+}
+
+
+.twopage nav{
+    text-align: center;
+}
+
+.panel-body p{
+    font-size: 0.9em;
+}
+
+footer .copyright{
+    border-top: 2px darkgrey solid;
+    padding-top: 10px;
+    text-align: center;
+}
+
+footer h5{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.modal-header a{
+    text-decoration: none;
+}
+
+.articlecontent img{
+max-height:450px;
+max-width:650px;
+width:expression_r((this.width > 650 && this.width > this.height) ? '650px': this.width+'px');
+height:expression_r((this.height > 450 && this.height > this.width) ? '450px': this.height+'px');
+float:middle;
+}
